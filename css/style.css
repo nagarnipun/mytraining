@@ -1,0 +1,32 @@
+
+	/* grouping css */
+	
+	h1,h2,h3{
+		color:red;
+		background-color:yellow;
+	}
+	
+	
+	/* custome css  by class ( . )  */
+	
+	.naran{
+		background-color:green;
+		color:white;
+	}
+	.textcenter{
+		text-align:center;
+	}
+	.uppercase{
+		text-transform:uppercase;
+	}
+	
+	
+
+	/* custome css  id class ( # )  */
+	
+	#dinesh{
+		background-color:blue;
+		text-align:center;
+		color:white;
+	}
+	

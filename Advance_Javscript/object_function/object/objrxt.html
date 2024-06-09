@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        obj={id:15,name:"nirav nagar",salary:25000};
+
+        console.log(obj);
+        
+        document.write(obj.id + " " + obj.name + " " + obj.salary + "<br>")
+
+        for(property in obj)
+        {
+            document.write(obj(property));
+        }
+        obj.arry=[
+            {id:15,name:"nirav nagar",salary:25000},
+            {id:16,name:"ravi nagar",salary:30000},
+            {id:17,name:"nipun nagar",salary:35000},
+        ];
+        document.write(obj.arry[1].id+"" +obj.arry[1].name+ ""+ obj.arry[1].salary+"<br> <br><br>" )
+    </script>
+    
+</body>
+</html>

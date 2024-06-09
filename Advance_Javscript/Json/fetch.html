@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    	//	// convert api(url) in object  https://jsonplaceholder.typicode.com/
+
+        // all data
+
+        fetch('https://jsonplaceholder.typicode.com/photos')
+		.then(resp => resp.json())
+		.then(object => console.log(object));
+		
+
+        // single data from id
+
+        fetch('https://jsonplaceholder.typicode.com/posts/5')
+		.then(resp => resp.json())
+		.then(object => console.log(object));
+
+
+        // fetch data by column
+
+        fetch('https://jsonplaceholder.typicode.com/posts?userId=4')
+		.then(resp => resp.json())
+		.then(object => console.log(object));
+
+
+</script>
+
+</body>
+</html>

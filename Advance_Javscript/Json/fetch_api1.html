@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="test" style="border: solid red 2px;">
+        <h1>My Data</h1>
+    </div>
+    
+<script>
+    	//	// convert api(url) in object  https://jsonplaceholder.typicode.com/
+
+        // all data
+        const test = document.getElementById("test");
+        
+        function showData(myobj)
+        {    
+            for(const data of myobj)
+            {       
+                let html = `<p>${data.userId} : ${data.id} : ${data.title}   </p>`;
+                test.insertAdjacentHTML("beforeend", html);
+            }
+        }
+
+        
+        fetch('https://jsonplaceholder.typicode.com/albums')
+        .then((response) => {
+		return response.json();
+        })
+        .then((data) =>{
+            showData(data);
+        })
+    
+		
+
+</script>
+
+</body>
+</html>
